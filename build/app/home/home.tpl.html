@@ -1,4 +1,5 @@
-<div ng-hide="home.show"
+<div ng-if="!home.show"
+     class="zipper"
      style="background:darkred; width:100vw; height:100vh; display:flex; justify-content:center; text-align: center; flex-direction: column; position:absolute; top:0; left:0; color:mintcream">
     <h1 style="font-family: 'Nothing You Could Do', cursive;">Angela,</h1>
     <h3 style="font-family: 'Nobile', sans-serif;">Will you be my virtualentine?</h3>
@@ -10,7 +11,7 @@
                 <i style="color:darkred" class="fa fa-heart fa-stack-1x"></i>
                 <i class="fa fa-ban fa-stack-2x"></i>
             </div>
-            <div>No way, José</div>
+            <div>No Way, José</div>
         </button>
         <button ng-click="home.show.yes = true"
                 style="font-size: 1.2em; padding:1em; font-family: 'Nothing You Could Do', cursive;">
@@ -18,23 +19,24 @@
                 <i style="color:darkred" class="fa fa-heart fa-stack-1x"></i>
                 <i class="fa fa-circle-o-notch fa-stack-2x"></i>
             </div>
-            <div>Yes, Obviously</div>
+            <div>Yes Sirree!</div>
         </button>
     </div>
 </div>
 
 <div ng-if="home.show.yes"
+     class="zipper"
      style="background: black; width:100vw; height:100vh; display:flex; justify-content:center; text-align: center; flex-direction: column; position:absolute; z-index:100; top:0; left:0;">
     <button style="position:fixed; padding:1em; font-family: 'Nobile', sans-serif;" ng-click="home.show = false">
         <b class="fa fa-chevron-left"></b>
     </button>
     <iframe width="100%" height="100%"
-            src="https://www.youtube-nocookie.com/embed/aF4CWCXirZ8?start=19&rel=0&autoplay=1&showinfo=0"
+            src="https://www.youtube-nocookie.com/embed/nMN4JZ8crVY?rel=0&autoplay=1&showinfo=0"
             frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div ng-if="home.show.no"
-     style="background: black; width:100vw; height:100vh; display:flex; justify-content:center; text-align: center; flex-direction: column; position:absolute; z-index:99; top:0; left:0;">
+     style="background: black; width:100vw; height:100vh; display:flex; justify-content:center; text-align: center; flex-direction: column; position:absolute; z-index:99; top:0; left:0;" class="zipper">
     <button style="position:fixed; padding:1em; font-family: 'Nobile', sans-serif;" ng-click="home.show = false">
         <b class="fa fa-chevron-left"></b>
     </button>
