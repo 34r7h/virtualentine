@@ -6,7 +6,7 @@
   angular.module('vday').config(config);
 
   function config($urlRouterProvider) {
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
   }
 })();
 //# sourceMappingURL=app-routes.js.map
