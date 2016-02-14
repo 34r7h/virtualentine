@@ -16,3 +16,16 @@
 
 .zipper.ng-enter-prepare {
   opacity: 0; }
+
+.background {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b3e31+0,9e1300+100 */
+  background: #9b3e31;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #9b3e31 0%, #9e1300 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-radial-gradient(center, ellipse, #9b3e31 0%, #9e1300 100%);
+  background: radial-gradient(ellipse at center, #9b3e31 0%, #9e1300 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b3e31', endColorstr='#9e1300',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
